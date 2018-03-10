@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,19 @@
 	<title>Document</title>
 
 </head>
+
 <body>
 	<script src="https://cdn.bootcss.com/lodash.js/4.17.5/lodash.js"></script>
 	<script>
-		let res=_.chunk(['a', 'b', 'c', 'd'], 2);
+		let res = _.chunk(['a', 'b', 'c', 'd'], 2);
 		console.log(res)
+		var users = [
+			{ 'user': 'barney', 'age': 36, 'active': true },
+			{ 'user': 'fred', 'age': 40, 'active': false }
+		];
+		let res2=_.filter(users,{});
+		console.log(res2)
 	</script>
 </body>
+
 </html>
