@@ -12,14 +12,12 @@
 <body>
 	<script src="https://cdn.bootcss.com/lodash.js/4.17.5/lodash.js"></script>
 	<script>
-		let res = _.chunk(['a', 'b', 'c', 'd'], 2);
-		console.log(res)
-		var users = [
-			{ 'user': 'barney', 'age': 36, 'active': true },
-			{ 'user': 'fred', 'age': 40, 'active': false }
-		];
-		let res2=_.filter(users,{});
-		console.log(res2)
+		// 剔除指定的值
+		let arr1 = [3, 2, 1];
+		let arr2 = [4, 2];
+		let res = _.difference(arr1, arr2);
+		console.log(res);//[3,1]
+
 	</script>
 </body>
 

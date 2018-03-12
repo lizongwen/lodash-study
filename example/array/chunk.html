@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+</head>
+
+<body>
+	<script src="https://cdn.bootcss.com/lodash.js/4.17.5/lodash.js"></script>
+	<script>
+		// 拆分数组
+		let res = _.chunk(['a', 'b', 'c', 'd']);
+		console.log(res)//[['a'],['b'],['c'],['d']]
+		let res0 = _.chunk(['a', 'b', 'c', 'd'], 0);
+		console.log(res0)//[]
+		let res1 = _.chunk(['a', 'b', 'c', 'd'], 1);
+		console.log(res1)//[['a'],['b'],['c'],['d']]
+		let res2 = _.chunk(['a', 'b', 'c', 'd'], 2);
+		console.log(res2)//[['a', 'b'], ['c', 'd']]
+		let res3 = _.chunk(['a', 'b', 'c', 'd'], 3);
+		console.log(res3)//[['a','b','c'],['d']]
+		let res4 = _.chunk(['a', 'b', 'c', 'd'], 4);
+		console.log(res4)//[['a', 'b', 'c', 'd']]
+		let res5 = _.chunk(['a', 'b', 'c', 'd'], 5);
+		console.log(res5)//[['a', 'b', 'c', 'd']]
+	</script>
+</body>
+
+</html>

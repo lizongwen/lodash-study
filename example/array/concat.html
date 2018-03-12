@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+</head>
+
+<body>
+	<script src="https://cdn.bootcss.com/lodash.js/4.17.5/lodash.js"></script>
+	<script>
+		// 连接参数,返回数组
+		let array = [1];
+		let array1={foo:"foo"};
+		let array2=[{foo:"foo"}];
+		let res1 = _.concat(array, 2);
+		console.log(res1)//[1,2]
+		let res2 = _.concat(array, [2]);
+		console.log(res2);//[1,2]
+		let res3 = _.concat(array, 2, 3);
+		console.log(res3);//[1, 2, 3]
+		let res4 = _.concat(array, 2, [3]);
+		console.log(res4);//[1, 2, 3]
+		let res5 = _.concat(array, 2, [3],[[4]]);
+		console.log(res5);//[1, 2, 3,[4]]
+		let res6 = _.concat(array, {a:1});
+		console.log(res6);//[1, {a:1}]
+		let res7 = _.concat(array, [{a:1}]);
+		console.log(res7);//[1, {a:1}]
+		let res8 = _.concat(array1, {a:1});
+		console.log(res8);//[{foo:"foo"}, {a:1}]
+		let res9 = _.concat(array2, [{a:1}]);
+		console.log(res9);//[{foo:"foo"}, {a:1}]
+	</script>
+</body>
+
+</html>
